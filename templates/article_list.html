@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>The</div>
+{% for instance in list_of_article %}
+     <p>{{ instance.id }} - <a href='/blog/{{ instance.id }}/'>{{ instance.title }}</a></p>
+{% endfor %}
+
+{% endblock %}
